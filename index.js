@@ -22,13 +22,7 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json());
 
 // Database Crendential Omitted
-const conn = mysql.createConnection({
-  host: 'database-1.cgcmy4infmjo.ap-south-1.rds.amazonaws.com',
-  user: 'admin',
-  password: 'ayushdb123',
-  database: 'alumnidb',
-  multipleStatements: true
-});
+
 
 //connect to database
 conn.connect((err) => {

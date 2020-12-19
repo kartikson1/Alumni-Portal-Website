@@ -1,0 +1,47 @@
+<!-- <%-include ("./partials/header") %> -->
+<link rel="stylesheet" href="/stylesheets/forms.css" />
+<div class="login-box" style="margin-top: 180px;"> 
+    <h2 >Register</h2>
+    <form action="/api/users" method="POST">
+      <div class="user-box">
+        <input type="text" name="alumni_name" required>
+        <label>Name</label>
+      </div>
+      <div class="user-box">
+        <input type="email" name="alumni_email" required >
+        <label>Email</label>
+      </div>
+      <div class="user-box">
+        <input type="password" name="password" required>
+        <label>Password</label>
+      </div>
+      <div class="user-box">
+        <input type="tel" name="alumni_phone" required pattern="[0-9]{10}"> 
+        <label>Phone Number</label>
+      </div>
+      <div class="user-box">
+        <input type="text" name="college" required>
+        <label>College</label>
+      </div>
+      <div class="user-box">
+        <input type="text" name="degree" required>
+        <label>Degree</label>
+      </div>
+      <div class="user-box">
+        <input type="text" name="company" required>
+        <label>Company</label>
+      </div>
+
+  
+      <!-- <a href="/intro"></a> -->
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <button style="margin-top:20px;text-align:center;padding:10px 10px;border: none; background: black; font-size: large; font-weight: bold; color: white;" type="submit">Register</button>
+        <!-- <a href="/intro">Register</a> -->
+      <!-- </a> -->
+    </form>
+    <p style="color: #03e9f4; margin-top: 10px; font-weight: bold; ">Aldready have an account?<a style="margin-left: 20px; color: black; padding: 10px 10px " href="/login">Login</a></p>
+  </div>

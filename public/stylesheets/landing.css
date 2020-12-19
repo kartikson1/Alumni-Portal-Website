@@ -1,0 +1,105 @@
+body {
+    background-color: #000;    
+  }
+  
+  #landing-header {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    padding-top: 40vh;
+  }
+  
+  #landing-header h1 {
+    color: #fff;
+  }
+  
+  .slideshow {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .slideshow li {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 50s linear infinite;
+  }
+  
+  .slideshow li:nth-child(1) {
+    background-image: url(https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y29sbGVnZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60);
+  }
+  .slideshow li:nth-child(2) {
+    background-image: url(https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8c3R1ZGVudHN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60);
+    animation-delay: 10s;
+  }
+  .slideshow li:nth-child(3) {
+    background-image: url(https://images.unsplash.com/photo-1525921429624-479b6a26d84d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8Y29sbGVnZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60);
+    animation-delay: 20s;
+  }
+  .slideshow li:nth-child(4) {
+    background-image: url(https://images.unsplash.com/photo-1555967522-37949fc21dcb?ixid=MXwxMjA3fDB8MHxzZWFyY2h8ODF8fGdyYWR1YXRpb258ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60);
+    animation-delay: 30s;
+  }
+  .slideshow li:nth-child(5) {
+    background-image: url(https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8Ym9va3N8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60);
+    animation-delay: 40s;
+  }
+  
+  @keyframes imageAnimation {
+    0% {
+      opacity: 0;
+      animation-timing-function: ease-in;
+    }
+    10% {
+      opacity: 1;
+      animation-timing-function: ease-out;
+    }
+    20% {
+      opacity: 1;
+    }
+    30% {
+      opacity: 0;
+    }
+  }
+  
+#Headingbackground {
+    z-index: 1;
+    background-color: black;
+    opacity: 0.6;
+    width: 500px;
+    align-items: center;
+    align-self:center;
+    margin:auto;
+
+}
+h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 45px;
+    z-index: 3;
+}
+
+.btn{
+padding:10px 10px;
+margin-top: 10px;
+font-size: large;
+font-weight: bold;
+}
+
+
+
+
+

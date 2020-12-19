@@ -1,0 +1,39 @@
+<!-- <%-include ("./partials/header") %> -->
+<link rel="stylesheet" href="/stylesheets/forms.css" />
+<div class="login-box" style="margin-top: 180px;"> 
+    <h2 >Create Event</h2>
+    <form action="/api/events" method="POST">
+      <div class="user-box">
+        <input type="text" name="title" required>
+        <label>Title</label>
+      </div>
+      <div class="user-box">
+        <input name="venue" required >
+        <label>Venue</label>
+      </div>
+      <div class="user-box">
+        <input name="description" required>
+        <label>Description</label>
+      </div>
+      <div class="user-box">
+        <input name="fees" required> 
+        <label>Fees</label>
+      </div>
+      <div class="user-box">
+        <input type="text" name="organiser" required>
+        <label>Organiser</label>
+      </div>
+    
+
+  
+      <!-- <a href="/intro"></a> -->
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <button style="margin-top:20px;text-align:center;padding:10px 10px;border: none; background: black; font-size: large; font-weight: bold; color: white;" type="submit">Register</button>
+        <!-- <a href="/intro">Register</a> -->
+      <!-- </a> -->
+    </form>
+  </div>

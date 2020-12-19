@@ -54,6 +54,12 @@
                             <li class="scroll-to-section"><a href="#projects">Announcements</a></li>
                             <li class="scroll-to-section"><a href="#contact-us">Contact Us</a></li> 
                             <li class="scroll-to-section"><a href="/events">Events</a></li> 
+                            <% if (data=="yes") { %>
+                            <li class="scroll-to-section"><a href="/myprofile">Me</a></li> 
+                            <li class="scroll-to-section"><a href="/logout">Logout</a></li> 
+                            <% } else { %>
+                            <li class="scroll-to-section"><a href="/login">Login</a></li> 
+                            <% } %>
                         </ul>        
                         <a class='menu-trigger'>
                             <span>Menu</span>
